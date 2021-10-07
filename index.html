@@ -2,6 +2,17 @@
 <html>
     <head>
         <title>Backtracking</title>
+        <style>
+            pre{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #440000;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            #black{
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <h1>Backtracking</h1>
@@ -267,7 +278,7 @@
         <p><b>Trick #1: Indent when you print method entries and exits.</b> Often, the best debugging technique is to print every method call and return (or at least the most important ones). You probably want to print, for each method, what parameters it came in with, and what value it leaves with. However, if you just print a long list of these, it's hard to match up method exits with their corresponding entries. Indenting to show the level of nesting can help.</p>
         <p><b>Trick #2: Use specialized print methods for debugging.</b> Don't clutter up your actual code more than you must. Also, remember that code inserted for debugging purposes can itself contain bugs, or (in the worst case) can affect the results, so be very careful with it.</p>
         <p>Here's our debugging code. For this trivial program, there's almost more debugging code than actual code, but in larger programs the proportions will be better.</p>
-        <pre>
+        <pre class="code">
             static String indent = "";
 
             static String name(BinaryTree node) {
@@ -401,6 +412,90 @@
             <li>Jump ahead over exactly one marble of the opposite color, if the space just beyond that marble is clear.</li>
         </ul>
         <p>For example, you could make the following sequence of moves:</p>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">Starting Position:</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">Black moves ahead:</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">White jumps:</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">Black Moves:</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">Black jumps:</th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table border="1px" cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">White moves ahead:</th>
+                    <th width="44px">&nbsp</th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif"></th>
+                    <th><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif"></th>
+                </tr>
+            </thead>
+        </table><br>
+        <table cellpadding="5px" cellspacing="0px" align="center">
+            <thead>
+                <tr>
+                    <th border="0px" width="100px">Stuck!!</th>
+                    <th width="44px">&nbsp</th>
+                    <th width="44px">&nbsp</th>
+                    <th width="44px">&nbsp</th>
+                    <th width="44px">&nbsp</th>
+                    <th width="44px">&nbsp</th>
+                </tr>
+            </thead>
+        </table><br>
         <p>Now to the program. The main program will initialize the board, and call a recursive backtracking routine to attempt to solve the puzzle. The backtracking routine will either succeed and print out a winning path, or it will fail, and the main program will have to print out the bad news.</p>
         <p>The backtracking method is named solvable and returns a boolean. In solvable we shall need to check whether we are at a leaf, which in this case means a position from which no further moves are possible. This isn't so easy.</p>
         <p>Each possible move will result in a new board position, and these new board positions are the children of the current board position. Hence to find the children of a node (that is, of a board position), we need only find the possible moves from that node. Remember that it is also highly desirable to find an ordering on these possible moves.</p>
@@ -435,23 +530,23 @@
         <!-- hello -->
         <p>Along with canMove and makeMove, we are using methods puzzleSolved and printBoard with meanings that should be obvious.</p>
         <p>Here is some output from the program:</p>
-        <pre><b>
-            16.  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK
-            15.  WHITE  WHITE  WHITE  BLACK  _____  BLACK  BLACK
-            14.  WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK
-            13.  WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK
-            12.  WHITE  BLACK  WHITE  _____  WHITE  BLACK  BLACK
-            11.  WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK
-            10. WHITE  BLACK  WHITE  BLACK  WHITE  BLACK  _____
-            9.  WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE
-            8.  WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE
-            7.  _____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE
-            6.  BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE
-            5.  BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE
-            4.  BLACK  BLACK  WHITE  BLACK  WHITE  _____  WHITE
-            3.  BLACK  BLACK  WHITE  BLACK  _____  WHITE  WHITE
-            2.  BLACK  BLACK  _____  BLACK  WHITE  WHITE  WHITE
-            1.  BLACK  BLACK  BLACK  _____  WHITE  WHITE  WHITE
+        <pre id="black"><b>
+        16.  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK
+        15.  WHITE  WHITE  WHITE  BLACK  _____  BLACK  BLACK
+        14.  WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK
+        13.  WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK
+        12.  WHITE  BLACK  WHITE  _____  WHITE  BLACK  BLACK
+        11.  WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK
+        10. WHITE  BLACK  WHITE  BLACK  WHITE  BLACK  _____
+        9.  WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE
+        8.  WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE
+        7.  _____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE
+        6.  BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE
+        5.  BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE
+        4.  BLACK  BLACK  WHITE  BLACK  WHITE  _____  WHITE
+        3.  BLACK  BLACK  WHITE  BLACK  _____  WHITE  WHITE
+        2.  BLACK  BLACK  _____  BLACK  WHITE  WHITE  WHITE
+        1.  BLACK  BLACK  BLACK  _____  WHITE  WHITE  WHITE
         </b></pre>
         <p>Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.</p>
         <p>This page is made by <b>ASHISH BISHT</b></p>
