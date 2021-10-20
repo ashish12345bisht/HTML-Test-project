@@ -36,3 +36,17 @@ header p{
     background: #fff;
     cursor:pointer;
 }
+header{
+    padding-bottom: 100px;
+}
+.section-d{
+    display: flex;
+}
+.box:first-child{
+    background-color: #2690D4;
+}
+#sectionA{
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0px;
+}
