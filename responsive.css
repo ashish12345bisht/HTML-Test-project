@@ -145,7 +145,7 @@ header button{
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 600px)
 {
     body{
         margin: 20px;
