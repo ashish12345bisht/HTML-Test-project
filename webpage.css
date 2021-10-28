@@ -1,52 +1,174 @@
 body{
-    margin:0;
-    background: #333;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 1.5;
+    margin: 0;
 }
-.first
-{
+#container-1{
     background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
-    position: absolute;
-    background-position: center;
-    opacity: 0.5;
-    height: 450px;
-    width: 100%;
-    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    padding: 100px 350px 50px 350px;
     background-size: cover;
-    z-index: -1;
+    opacity: 0.95;
 }
-header h1{
-    padding-top: 100px;
+#heading-1{
+    font-size: 35px;
+    line-height: 53px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header p{
-    padding: 0px 50px;
+#paragraph-1{
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#btn{
-    padding: 1em;
-    color: #fff;
-    background: #333;
-    border: 1px solid #666;
+#button-1{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: #333333;
+    color: white;
+    border: 2px solid #333333;
+    padding: 20px 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#btn:hover{
-    color: #333;
-    background: #fff;
-    cursor:pointer;
+#button-1:hover{
+    color:#333333;
+    background-color: white;
 }
-header{
-    padding-bottom: 100px;
+.text-container{
+    text-align: center;
+    padding: 30px 300px;
 }
-.section-d{
+.heading-2{
+    color: #333333;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inner-container-1{
     display: flex;
+    padding: 25px;
 }
-.box:first-child{
+.inner-text{
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container-3{
+    display: flex;
+    padding: 50px 250px;
+    background-color: #333333;
+}
+.heading-3{
+    font-size: 21px;
+    line-height: 31px;
+    color: #333333;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 300px;
+    padding: 50px 10px;
+    text-align: center;
+    background-color: white;
+}
+.card-container img{
+    width:320px;
+    height: 200px;
+}
+.card-container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+#container-4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+}
+#inner-container-2{
     background-color: #2690D4;
+    text-align: center;
+    color: white;
+    padding: 50px 100px;
 }
-#sectionA{
-    background-color: #fff;
-    color: #333;
-    padding: 20px 0px;
+#inner-container-3{
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    padding: 50px 100px;
+}
+.inner-heading-2{
+    font-size: 26px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.inner-paragraph-2{
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#container-5{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#link{
+    color: #2690d4;
+}
+#link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#main-heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:600px) {
+    #container-3{
+        padding: 10px;
+        flex-direction: column;
+    }
+    #container-1{
+        padding:10px;
+        height: 400px;
+    }
+    .text-container{
+        padding: 10px;
+    }
+    .inner-container-1{
+        flex-direction: column;
+        text-align: justify;
+    }
+    #container-4{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    #inner-container-2{
+        padding: 50px 10px;
+    }
+    #inner-container-3{
+        padding: 50px 10px;
+    }
+    #container-5{
+        justify-content: space-between;
+        line-height: 5px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }

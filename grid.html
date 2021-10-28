@@ -1,0 +1,108 @@
+<head>
+    <title>Photo Album</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            background-color: #272727;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: repeat(auto-fit, 1fr);
+            padding: 50px 200px;
+        }
+        .sub-container{
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-gap: 1em;
+            padding: 50px;
+            background-color: #C69CFA;
+            margin-bottom: 2em;
+        }
+        img{
+            width: 300px;
+        }
+        img:hover{
+            width: 600px;
+            z-index: 1;
+            transition: all 0.5s;
+        }
+        h1{
+            color: bisque;
+        }
+        @media screen and (max-width: 600px) {
+            .container{
+                padding: 1em;
+            }
+            .sub-container{
+                display: block;
+                padding: 1em;
+            }
+            img{
+                width: 100%;
+            }
+            img:hover{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Album Certificates</h1>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/python_udemy_certificate_photo_Z2jA0bTPq22.jpg?updatedAt=1631282104664">
+            <div>
+                <h2>Python</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/CSS_certificate_AV7nZIoG2I.jpg?updatedAt=1631282104551">
+            <div>
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/js_certificate_5zz_Y0sv0.PNG?updatedAt=1631282104716">
+            <div>
+                <h2>JavaScript</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/pic_pdZds54yf.PNG?updatedAt=1631282102117">
+            <div>
+                <h2>WordPress</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/TEN_certicficate_oev1IqPbMZ.PNG?updatedAt=1631282094851">
+            <div>
+                <h2>TEN Internship Certificate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/ML_certificate_ALwRTUaw31.PNG?updatedAt=1631282084882">
+            <div>
+                <h2>Machine Learning</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <img src="https://ik.imagekit.io/cooldunlin185005/sociolabs_certificate_uBeIVx5Ap.PNG?updatedAt=1631282094736">
+            <div>
+                <h2>SocioLabs Internship certificate</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis provident, culpa magnam doloribus natus obcaecati tempora laudantium, autem unde deleniti, optio modi maxime recusandae repellendus? Sit dolores eos inventore exercitationem.</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
