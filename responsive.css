@@ -4,13 +4,6 @@ body{
     background-attachment : fixed;
 }
 .mobile{
-    background-color: #FFC600;
-    font-weight: 700;
-    color: #272727;
-    width: 75px;
-    font-size: 20px;
-    border: none;
-    padding: 10px;
     display: none;
 }
 header{
@@ -19,7 +12,7 @@ header{
 header button{
     background-color: #FFC600;
     font-weight: 900;
-    font-size: 20px;
+    
     width: 270px;
     height: 50px;
     margin: 2px;
@@ -150,9 +143,20 @@ header button{
     body{
         margin: 20px;
     }
-    
-    header button{
-        width: 100%;
+    /* .mobile{
+        display: block;
+        background-color: #FFC600;
+        font-weight: 700;
+        color: #272727;
+        width: 75px;
+        font-size: 1em;
+        border: none;
+        padding: 10px;
+        border-radius: 0.25em;
+    } */
+    header{
+        display: flex;
+        font-size: 0.5em;
     }
     #section-1{
         display: block;
@@ -163,7 +167,6 @@ header button{
     }
     #section-1-imgbox > *{
         background: #FFC600;
-        
         width: 250px;
     }
     #section-1-imgbox{
