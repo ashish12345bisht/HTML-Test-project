@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,30 @@
     <title>Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <style>
-        body{
-            background: linear-gradient(90deg,#CE4688,#070521);
+        body {
+            background: linear-gradient(90deg, #CE4688, #070521);
             margin: 0;
         }
-        .projects{
+
+        .projects {
             display: flex;
             height: 700px;
-            overflow:scroll;
+            overflow: scroll;
         }
-        iframe{
+
+        iframe {
             width: 600px;
             height: 400px;
             border: solid 4px antiquewhite;
             border-radius: 10px;
         }
-        
-        .pCards{
+
+        .pCards {
             padding: 1em;
             text-align: center;
         }
-        .btn{
+
+        .btn {
             background-color: #272727;
             color: white;
             border: none;
@@ -35,32 +39,38 @@
             padding: 1em;
             border-radius: 20px;
         }
-        .btn:hover{
+
+        .btn:hover {
             transform: scale(1.1);
             transition: all 0.2s;
         }
-        p{
+
+        p {
             color: white;
             font-family: poppins;
         }
-        a{
+
+        a {
             color: white;
             text-decoration: none;
         }
-        @media screen and (max-width: 600px)
-        {
-            .projects{
+
+        @media screen and (max-width: 600px) {
+            .projects {
                 display: block;
             }
-            iframe{
+
+            iframe {
                 width: 100%;
             }
-            h2{
+
+            h2 {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <h1 style="color: antiquewhite;font-family: poppins; text-align: center;">My Projects</h1>
     <h2 style="color: antiquewhite;font-family: poppins; text-align: center;">Scroll left to see more!!</h2>
@@ -89,17 +99,12 @@
         <div class="pCards">
             <iframe src="grid.html" frameborder="0"></iframe>
             <p>
-                This is just a display optimised photo album showcasing some of my certificates in the field of designing and web development.
+                This is just a display optimised photo album showcasing some of my certificates in the field of
+                designing and web development.
             </p>
             <button class="btn"><a href="grid.html">Go To Page</a></button>
         </div>
-        <div class="pCards">
-            <iframe src="bootstrap.html" frameborder="0"></iframe>
-            <p>
-                This project was a part of learning bootstrap.
-            </p>
-            <button class="btn"><a href="bootstrap.html">Go To Page</a></button>
-        </div>
+
         <div class="pCards">
             <iframe src="friends.html" frameborder="0"></iframe>
             <p>
@@ -135,6 +140,14 @@
             </p>
             <button class="btn"><a href="covid-test.html">Go To Page</a></button>
         </div>
+        <div class="pCards">
+            <iframe src="bootstrap.html" frameborder="0"></iframe>
+            <p>
+                This project was a part of learning bootstrap.
+            </p>
+            <button class="btn"><a href="bootstrap.html">Go To Page</a></button>
+        </div>
     </div>
 </body>
+
 </html>
